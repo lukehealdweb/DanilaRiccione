@@ -24,7 +24,7 @@ a:hover{
     grid-area: section1;
     height: 30em;
     background-color: red;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(nether.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(..nether.jpg);
     background-position: center;
     background-size: cover;
 }
