@@ -63,32 +63,10 @@ a:hover{
     height: 6vh;
     cursor: pointer;
 }
-.grid2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "section1m section1m"
-        "section2m section2m"
-        "section3m section3m"
-        "section4m section4m";
-}
-.section1m{
-    grid-area: section1m;
-    height: 20em;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(nether.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.section2m{
-    grid-area: section2m;
-    height: 40em;
-    background-color: black;
-    color: red;
-}
 #story{
     font-size: 25px;
     margin: 5em;
+    margin-top: 10em;
 }
 .section3m{
     grid-area: section3m;
@@ -97,11 +75,6 @@ a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(mypicture.png);
     background-position: center;
     background-size: cover;
-}
-.section4m{
-    grid-area: section4m;
-    height: 30em;
-    background-color: black;
 }
 #heading{
     position: relative;
@@ -131,37 +104,3 @@ a:hover{
         "section4 section4"
 }
 }
-@media only screen and (max-width: 820px) {
-    .grid2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "section1m section1m"
-        "section2m section2m"
-        "section3m section3m"
-        "section4m section4m";
-}
-    .section1m{
-        height: 20em;
-    }
-     .section2m{
-        height: auto;
-    }
-     .section3m{
-    height: 30em;
-    background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(mypicture.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
-     .section4m{
-        height: 20em;
-    }
-    #story{
-    font-size: 15px;
-    margin: 1vh;
-}
-}
-
