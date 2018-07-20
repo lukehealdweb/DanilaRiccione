@@ -64,17 +64,9 @@ a:hover{
     cursor: pointer;
 }
 #story{
-    font-size: 25px;
+    font-size: 3vh;
     margin: 5em;
-    margin-top: 10em;
-}
-.section3m{
-    grid-area: section3m;
-    height: 30em;
-    background-color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(mypicture.png);
-    background-position: center;
-    background-size: cover;
+    color: red;
 }
 #heading{
     position: relative;
@@ -101,6 +93,57 @@ a:hover{
         "section1 section1"
         "section2 section2"
         "section3 section3"
-        "section4 section4"
+        "section4 section4";
 }
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "story1 story1"
+        "story2 story2"
+        "story3 story3"
+        "story4 story4"
+}
+.story1{
+    grid-area: story1;
+    background-color: blue;
+    height: 30em;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(nether.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.story2{
+    grid-area: story2;
+    background-color: black;
+    height: auto;
+}
+.story3{
+    grid-area: story3;
+    background-color: red;
+    height: 30em;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(mypicture.png);
+    background-position: center;
+    background-size: cover;
+}
+.story4{
+    grid-area: story4;
+    background-color: black;
+    height: 30em;
+}
+@media only screen and (max-width: 760px) {
+    .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "story1 story1"
+        "story2 story2"
+        "story3 story3"
+        "story4 story4";
+}
+    .story2{
+        text-align: center;
+    }
 }
