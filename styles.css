@@ -24,7 +24,7 @@ a:hover{
     grid-area: section1;
     height: 30em;
     background-color: red;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(..nether.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(nether.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -131,7 +131,7 @@ a:hover{
         "section4 section4"
 }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
     .grid2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,8 +149,8 @@ a:hover{
         height: auto;
     }
      .section3m{
-        height: 30em;
-        background-color: black;
+    height: 30em;
+    background-color: black;
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(mypicture.png);
     background-position: center;
     background-size: contain;
